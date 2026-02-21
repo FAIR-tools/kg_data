@@ -1,0 +1,36 @@
+name: Rebuild Knowledge Graph
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'        # only trigger when YAML data changes
+
+jobs:
+  rebuild:
+    name: Rebuild graph on VM
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Rebuild graph and reload app
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
+            set -e
+
+            echo "── Pulling latest kg_data ──"
+            cd ~/kg_data
+            git pull origin main
+
+            echo "── Running rebuild_graph.py inside container ──"
+            docker exec kg_frontend_app python /kg_data/rebuild_graph.py
+
+            echo "── Signalling app to reload KG singleton ──"
+            curl -sf -X POST \
+              -H "X-Reload-Token: ${{ secrets.RELOAD_TOKEN }}" \
+              http://localhost:8000/api/admin/reload
+
+            echo "── Done ──"
