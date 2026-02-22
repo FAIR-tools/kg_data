@@ -27,7 +27,8 @@ jobs:
             git pull origin main
 
             echo "── Running rebuild_graph.py inside container ──"
-            docker exec kg_frontend_app /opt/conda/bin/python /kg_data/rebuild_graph.py
+            docker compose -f /home/atomrdf/kg_frontend/docker-compose.yml exec -T app \
+              /opt/conda/bin/python /kg_data/rebuild_graph.py
 
             echo "── Signalling app to reload KG singleton ──"
             curl -sf -X POST \
