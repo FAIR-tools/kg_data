@@ -1,0 +1,6723 @@
+computational_sample:
+- id: KBm7znG
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: HCQVRyq
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.553523275094705
+    number_of_atoms: 2
+    length:
+    - 2.866500093120737
+    - 2.866500093120737
+    - 2.866500093120737
+    vector: Cell([2.866500093120737, 2.866500093120737, 2.866500093120737])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.00174995
+      - 0.00174995
+      - 0.00174995
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: CimIxK4
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.60061219311316
+    number_of_atoms: 2
+    length:
+    - 2.8684090861517726
+    - 2.8684090861517726
+    - 2.8684090861517726
+    vector: Cell([2.8684090861517726, 2.8684090861517726, 2.8684090861517726])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0017511154080747033
+      - 0.0017511154080747033
+      - 0.0017511154080747033
+    - - 1.4359556619258833
+      - 1.4359556619258833
+      - 1.4359556619258833
+    species:
+    - Fe
+    - Fe
+- id: 8KVqZyM
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: Dj06l0I
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 22.687571535736403
+    number_of_atoms: 2
+    length:
+    - 2.52326001474995
+    - 2.5232600147499498
+    - 4.114654449041537
+    vector: Cell([[2.52326001474995, 0.0, 0.0], [-1.2616300073749749, 2.1852072731269536,
+      0.0], [0.0, 0.0, 4.114654449041537]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.00163001
+      - -0.00141163
+      - 4.1149
+    - - -0.00163001
+      - 1.45539
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: mQnN8zM
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 22.65278044847362
+    number_of_atoms: 2
+    length:
+    - 2.52196955974076
+    - 2.521969559740759
+    - 4.112550117179654
+    vector: Cell([[2.52196955974076, 0.0, 0.0], [-1.2609847798703797, 2.184089706306554,
+      0.0], [0.0, 0.0, 4.112550117179654]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0016291763742312586
+      - -0.0014109080589420136
+      - 4.112795542557533
+    - - -0.0016291763742312972
+      - 1.4546456790402704
+      - 2.0565177099079213
+    species:
+    - Fe
+    - Fe
+- id: 76wZjtG
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: W9HDgeA
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.352078881372375
+    number_of_atoms: 1
+    length:
+    - 2.522687562459816
+    - 2.522687562459815
+    - 2.522687562459815
+    vector: Cell([[2.522687562459816, 0.0, 0.0], [1.2613437812299078, 2.1847115149012426,
+      0.0], [1.2613437812299078, 0.7282371716337478, 2.0597657694973384]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.000841823
+      - 0.00072904
+      - 0.000687346
+    species:
+    - Fe
+- id: MOqXF5q
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.342013162905092
+    number_of_atoms: 1
+    length:
+    - 2.5219417322071274
+    - 2.5219417322071265
+    - 2.521941732207127
+    vector: Cell([[2.5219417322071274, 0.0, 0.0], [1.2609708661035635, 2.184065606955503,
+      0.0], [1.2609708661035635, 0.7280218689851681, 2.0591568016460657]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0008415741158059555
+      - 0.0007288244599959537
+      - 0.0006871427867886246
+    species:
+    - Fe
+- id: lvz5XHq
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: z73OiF2
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 22.99455626598081
+    number_of_atoms: 2
+    length:
+    - 2.843642596127307
+    - 2.843642596127307
+    - 2.843642596127307
+    vector: Cell([2.843642596127307, 2.843642596127307, 2.843642596127307])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0131787
+      - 0.0131787
+      - 0.0131787
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: ouBsj4T
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.026903737092248
+    number_of_atoms: 2
+    length:
+    - 2.8449753977749546
+    - 2.8449753977749546
+    - 2.8449753977749546
+    vector: Cell([2.8449753977749546, 2.8449753977749546, 2.8449753977749546])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.013184876793489371
+      - 0.013184876793489371
+      - 0.013184876793489368
+    - - 1.4356725776182209
+      - 1.4356725776182209
+      - 1.4356725776182206
+    species:
+    - Fe
+    - Fe
+- id: H52Oxxq
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: 74QUs4S
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 20.97570837197508
+    number_of_atoms: 2
+    length:
+    - 2.412670027603295
+    - 2.4126700276032946
+    - 4.160927479356612
+    vector: Cell([[2.412670027603295, 0.0, 0.0], [-1.2063350138016473, 2.089433534853756,
+      0.0], [0.0, 0.0, 4.160927479356612]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.053665
+      - 0.0464752
+      - -0.0228924
+    - - 0.053665
+      - 1.43943
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: Kzt0wN1
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 20.88490383520105
+    number_of_atoms: 2
+    length:
+    - 2.4091834821236615
+    - 2.4091834821236615
+    - 4.15491452991543
+    vector: Cell([[2.4091834821236615, 0.0, 0.0], [-1.2045917410618305, 2.086414097896944,
+      0.0], [0.0, 0.0, 4.15491452991543]])
+    angle:
+    - 90.0
+    - 90.0
+    - 119.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.05358744879696607
+      - 0.046408038765093786
+      - -0.022859318230497833
+    - - 0.053587448796966135
+      - 1.4373498820798822
+      - 2.054596608984878
+    species:
+    - Fe
+    - Fe
+- id: W5vmxXh
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: 2YMAlPc
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 10.089612620608717
+    number_of_atoms: 1
+    length:
+    - 2.425473291666183
+    - 2.4254732916661723
+    - 2.4254732916661683
+    vector: Cell([[2.425473291666183, 0.0, 0.0], [1.2127366458330862, 2.100521486783568,
+      0.0], [1.2127366458330844, 0.7001738289278553, 1.9803906497769437]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.049449
+      - 0.0428241
+      - 0.0403749
+    species:
+    - Fe
+- id: iUZFfIp
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 10.085865355201046
+    number_of_atoms: 1
+    length:
+    - 2.4251729822312242
+    - 2.4251729822312136
+    - 2.42517298223121
+    vector: Cell([[2.4251729822312242, 0.0, 0.0], [1.2125864911156068, 2.1002614111838978,
+      0.0], [1.212586491115605, 0.7000871370612985, 1.9801454481500798]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.04944287748308741
+      - 0.04281879774360418
+      - 0.040369900990756255
+    species:
+    - Fe
+- id: SaWUwPk
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: 1NVovog
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 22.65677295102121
+    number_of_atoms: 2
+    length:
+    - 2.829649760875092
+    - 2.829649760875092
+    - 2.829649760875092
+    vector: Cell([2.829649760875092, 2.829649760875092, 2.829649760875092])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 2.84982
+      - 2.84982
+      - 0.0201751
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: 5122zlc
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 22.625987697717225
+    number_of_atoms: 2
+    length:
+    - 2.8283675693150188
+    - 2.8283675693150188
+    - 2.8283675693150188
+    vector: Cell([2.8283675693150188, 2.8283675693150188, 2.8283675693150188])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 2.8485286687539033
+      - 2.8485286687539033
+      - 0.020165958111381378
+    - - 1.4343497623224806
+      - 1.4343497623224806
+      - 1.4343497623224806
+    species:
+    - Fe
+    - Fe
+- id: zBzsLcA
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: TQXw8Q7
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 22.74110966189925
+    number_of_atoms: 2
+    length:
+    - 2.502272452431022
+    - 2.502272452431024
+    - 4.19383974498579
+    vector: Cell([[2.502272452431022, 0.0, 0.0], [-1.251136226215512, 2.1670315109952547,
+      0.0], [0.0, 0.0, 4.19383974498579]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -1.24227
+      - 2.17471
+      - 4.15449
+    - - 0.00886377
+      - 1.45236
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: ExgVgwk
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 22.768067797650712
+    number_of_atoms: 2
+    length:
+    - 2.50326082347413
+    - 2.503260823474131
+    - 4.195496267144019
+    vector: Cell([[2.50326082347413, 0.0, 0.0], [-1.2516304117370658, 2.1678874654269507,
+      0.0], [0.0, 0.0, 4.195496267144019]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -1.2427606834563631
+      - 2.1755689873533024
+      - 4.156130979426877
+    - - 0.008867271095011522
+      - 1.4529336667750838
+      - 2.058382718297399
+    species:
+    - Fe
+    - Fe
+- id: 4o5yUTr
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: 7JaYHRg
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 10.926977318949286
+    number_of_atoms: 1
+    length:
+    - 2.4907970717584833
+    - 2.490797071758473
+    - 2.4907970717584704
+    vector: Cell([[2.4907970717584833, 0.0, 0.0], [1.2453985358792365, 2.157093539814729,
+      0.0], [1.2453985358792352, 0.7190311799382423, 2.0337272928755827]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0167871
+      - 0.014538
+      - 0.0137066
+    species:
+    - Fe
+- id: o1vyaJ0
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 10.93096902217373
+    number_of_atoms: 1
+    length:
+    - 2.49110033684777
+    - 2.4911003368477598
+    - 2.4911003368477567
+    vector: Cell([[2.49110033684777, 0.0, 0.0], [1.2455501684238799, 2.1573561750861323,
+      0.0], [1.2455501684238786, 0.7191187250287101, 2.0339749077841]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0167891439005
+      - 0.014539770063052524
+      - 0.013708268836582454
+    species:
+    - Fe
+- id: Pu7yoNy
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: QUCzviV
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 22.30143192271246
+    number_of_atoms: 2
+    length:
+    - 2.814778659069183
+    - 2.814778659069183
+    - 2.814778659069183
+    vector: Cell([2.814778659069183, 2.814778659069183, 2.814778659069183])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 2.84239
+      - 0.0276107
+      - 2.84239
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: Que0SWx
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 22.261947657259874
+    number_of_atoms: 2
+    length:
+    - 2.81311650686818
+    - 2.81311650686818
+    - 2.81311650686818
+    vector: Cell([2.81311650686818, 2.81311650686818, 2.81311650686818])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 2.8407115430529903
+      - 0.027594395632468873
+      - 2.8407115430529903
+    - - 1.4341526195494079
+      - 1.4341526195494079
+      - 1.4341526195494079
+    species:
+    - Fe
+    - Fe
+- id: N8fukqz
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: Tz0OeCx
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 24.3124519873559
+    number_of_atoms: 2
+    length:
+    - 2.6435904486506128
+    - 2.643590448650616
+    - 4.0170735287012
+    vector: Cell([[2.6435904486506128, 0.0, 0.0], [-1.321795224325308, 2.289416485733335,
+      0.0], [0.0, 0.0, 4.0170735287012]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0617952
+      - -0.0535162
+      - 4.06611
+    - - -0.0617952
+      - 1.47276
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: o9DEvBE
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 24.33632642701273
+    number_of_atoms: 2
+    length:
+    - 2.6444554867647003
+    - 2.6444554867647034
+    - 4.0183879992203355
+    vector: Cell([[2.6444554867647003, 0.0, 0.0], [-1.3222277433823517, 2.290165630715377,
+      0.0], [0.0, 0.0, 4.0183879992203355]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.06181542068255503
+      - -0.05353371162051019
+      - 4.067440516278673
+    - - -0.061815420682555085
+      - 1.473241917890706
+      - 2.0582432799603327
+    species:
+    - Fe
+    - Fe
+- id: Xte882n
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: tL3E0Fq
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.225539853394478
+    number_of_atoms: 1
+    length:
+    - 2.585796527219329
+    - 2.5857965272193364
+    - 2.5857965272193346
+    vector: Cell([[2.585796527219329, 0.0, 0.0], [1.2928982636096682, 2.239365481589525,
+      0.0], [1.2928982636096673, 0.7464551605298413, 2.111294023449374]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0307127
+      - -0.0265979
+      - -0.0250768
+    species:
+    - Fe
+- id: iG4kMQY
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.248416293588681
+    number_of_atoms: 1
+    length:
+    - 2.5874083704699036
+    - 2.587408370469911
+    - 2.587408370469909
+    vector: Cell([[2.5874083704699036, 0.0, 0.0], [1.2937041852349556, 2.2407613787914413,
+      0.0], [1.2937041852349547, 0.7469204595971467, 2.1126100879524596]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.030731844606963783
+      - -0.026614479667094137
+      - -0.025092431497065037
+    species:
+    - Fe
+- id: lB93qk2
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: Lj3Hq5H
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.553634448386305
+    number_of_atoms: 2
+    length:
+    - 2.8665046031006325
+    - 2.8665046031006325
+    - 2.8665046031006325
+    vector: Cell([2.8665046031006325, 2.8665046031006325, 2.8665046031006325])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0017477
+      - 0.0017477
+      - 0.0017477
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: qYZT6fF
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.553090011682453
+    number_of_atoms: 2
+    length:
+    - 2.866482516737899
+    - 2.866482516737899
+    - 2.866482516737899
+    vector: Cell([2.866482516737899, 2.866482516737899, 2.866482516737899])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0017476865340051756
+      - 0.0017476865340051756
+      - 0.0017476865340051756
+    - - 1.4349889433526504
+      - 1.4349889433526504
+      - 1.4349889433526504
+    species:
+    - Fe
+    - Fe
+- id: o4X8nUi
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: YOnK4KH
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 24.56512299887312
+    number_of_atoms: 2
+    length:
+    - 2.589810466653284
+    - 2.5898104666532906
+    - 4.229142782546498
+    vector: Cell([[2.589810466653284, 0.0, 0.0], [-1.2949052333266453, 2.2428416551085815,
+      0.0], [0.0, 0.0, 4.229142782546498]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0349052
+      - -0.0302288
+      - -0.057
+    - - -0.0349052
+      - 1.465
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: vQtwfZv
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 24.57898318944769
+    number_of_atoms: 2
+    length:
+    - 2.590297451361464
+    - 2.5902974513614705
+    - 4.229938025244884
+    vector: Cell([[2.590297451361464, 0.0, 0.0], [-1.2951487256807352, 2.24326339623712,
+      0.0], [0.0, 0.0, 4.229938025244884]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.03491176352997828
+      - -0.03023448418559434
+      - -0.05701071820842632
+    - - -0.034911763529978206
+      - 1.465275476760431
+      - 2.0579569028791536
+    species:
+    - Fe
+    - Fe
+- id: anjgfL5
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: 6ZOsRtN
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.28256182284423
+    number_of_atoms: 1
+    length:
+    - 2.5898104893837366
+    - 2.5898104893837433
+    - 2.589810489383743
+    vector: Cell([[2.5898104893837366, 0.0, 0.0], [1.2949052446918718, 2.242841674793731,
+      0.0], [1.2949052446918716, 0.7476138915979104, 2.1145714098325867]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0327196
+      - -0.028336
+      - -0.0267155
+    species:
+    - Fe
+- id: WrEYGWi
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.289491321957156
+    number_of_atoms: 1
+    length:
+    - 2.590297432197479
+    - 2.590297432197486
+    - 2.590297432197485
+    vector: Cell([[2.590297432197479, 0.0, 0.0], [1.2951487160987432, 2.2432633796406223,
+      0.0], [1.295148716098743, 0.7477544598802075, 2.1149689969751146]])
+    angle:
+    - 59.999999999999986
+    - 59.999999999999986
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.03272575202315144
+      - -0.028341327807430997
+      - -0.026720523116862745
+    species:
+    - Fe
+- id: aNYiPpY
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: 2a1w9Gy
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.27801699133679
+    number_of_atoms: 2
+    length:
+    - 2.8552797172206175
+    - 2.8552797172206175
+    - 2.8552797172206175
+    vector: Cell([2.8552797172206175, 2.8552797172206175, 2.8552797172206175])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 2.86264
+      - 2.86264
+      - 2.86264
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: 9COrTRZ
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.251458262116614
+    number_of_atoms: 2
+    length:
+    - 2.8541934067725823
+    - 2.8541934067725823
+    - 2.8541934067725823
+    vector: Cell([2.8541934067725823, 2.8541934067725823, 2.8541934067725823])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 2.8615508892826824
+      - 2.8615508892826824
+      - 2.861550889282683
+    - - 1.434454044560493
+      - 1.434454044560493
+      - 1.4344540445604932
+    species:
+    - Fe
+    - Fe
+- id: PjfZ8jU
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: 3P6bF2r
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 25.535679538478732
+    number_of_atoms: 2
+    length:
+    - 2.615727187730166
+    - 2.6157271877301658
+    - 4.309549713238141
+    vector: Cell([[2.615727187730166, 0.0, 0.0], [-1.3078635938650829, 2.265286193943951,
+      0.0], [0.0, 0.0, 4.309549713238141]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 2.56786
+      - -0.0414511
+      - 4.21235
+    - - -0.0478636
+      - 1.46874
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: ZTZ3BRI
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 25.598167423129134
+    number_of_atoms: 2
+    length:
+    - 2.617859082090284
+    - 2.6178590820902836
+    - 4.31306212262525
+    vector: Cell([[2.617859082090284, 0.0, 0.0], [-1.3089295410451418, 2.267132468617998,
+      0.0], [0.0, 0.0, 4.31306212262525]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 2.5699528811984873
+      - -0.04148488386198882
+      - 4.21578318877059
+    - - -0.04790261023752542
+      - 1.4699370661685085
+      - 2.0592469798850295
+    species:
+    - Fe
+    - Fe
+- id: o8h8ShV
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: Ot89vsm
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.668134667387788
+    number_of_atoms: 1
+    length:
+    - 2.6166314466036047
+    - 2.6166314466036154
+    - 2.6166314466036122
+    vector: Cell([[2.6166314466036047, 0.0, 0.0], [1.308315723301808, 2.266069305099956,
+      0.0], [1.3083157233018063, 0.7553564350333178, 2.136470629699819]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0461301
+      - -0.0399499
+      - -0.0376651
+    species:
+    - Fe
+- id: Imy0cqc
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.714106899565996
+    number_of_atoms: 1
+    length:
+    - 2.6197928478113064
+    - 2.619792847811317
+    - 2.619792847811314
+    vector: Cell([[2.6197928478113064, 0.0, 0.0], [1.3098964239056587, 2.2688071588573804,
+      0.0], [1.3098964239056572, 0.7562690529524593, 2.139051902976848]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.046185834159291214
+      - -0.03999816727213399
+      - -0.03771060678804337
+    species:
+    - Fe
+- id: wogWiP9
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: Owk0gPt
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.639904702319278
+    number_of_atoms: 2
+    length:
+    - 2.870000068889964
+    - 2.870000068889964
+    - 2.870000068889964
+    vector: Cell([2.870000068889964, 2.870000068889964, 2.870000068889964])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -3.4445e-08
+      - -3.4445e-08
+      - -3.4445e-08
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: Vzvny97
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.641107639197802
+    number_of_atoms: 2
+    length:
+    - 2.870048748871397
+    - 2.870048748871397
+    - 2.870048748871397
+    vector: Cell([2.870048748871397, 2.870048748871397, 2.870048748871397])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -3.44455842445715e-08
+      - -3.44455842445715e-08
+      - -3.44455842445715e-08
+    - - 1.4350243399901323
+      - 1.4350243399901323
+      - 1.4350243399901323
+    species:
+    - Fe
+    - Fe
+- id: rNELJNi
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: S7JA996
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 24.8865866170383
+    number_of_atoms: 2
+    length:
+    - 2.601058452348236
+    - 2.601058452348245
+    - 4.247510667279767
+    vector: Cell([[2.601058452348236, 0.0, 0.0], [-1.3005292261741226, 2.252582696461816,
+      0.0], [0.0, 0.0, 4.247510667279767]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0405292
+      - -0.0350993
+      - -0.0661839
+    - - -0.0405292
+      - 1.46662
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: qeL7BI2
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 24.886001890430524
+    number_of_atoms: 2
+    length:
+    - 2.6010380809995977
+    - 2.601038080999607
+    - 4.247477401006735
+    vector: Cell([[2.6010380809995977, 0.0, 0.0], [-1.3005190404998035, 2.252565054356386,
+      0.0], [0.0, 0.0, 4.247477401006735]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.040528882577505136
+      - -0.035099025104187255
+      - -0.06618338165128704
+    - - -0.040528882577505164
+      - 1.4666085135117541
+      - 2.0575538852234256
+    species:
+    - Fe
+    - Fe
+- id: FXrVEdt
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: ien1HUt
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.443293269906759
+    number_of_atoms: 1
+    length:
+    - 2.6010584498637295
+    - 2.6010584498637357
+    - 2.6010584498637344
+    vector: Cell([[2.6010584498637295, 0.0, 0.0], [1.300529224931868, 2.252582694310168,
+      0.0], [1.3005292249318672, 0.7508608981033891, 2.12375533110691]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0383436
+      - -0.0332065
+      - -0.0313074
+    species:
+    - Fe
+- id: Sw9xeHf
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.443001064636816
+    number_of_atoms: 1
+    length:
+    - 2.601038089526654
+    - 2.6010380895266607
+    - 2.601038089526659
+    vector: Cell([[2.601038089526654, 0.0, 0.0], [1.3005190447633304, 2.252565061741031,
+      0.0], [1.3005190447633295, 0.7508550205803435, 2.1237387069613014]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0383432998573328
+      - -0.03320624006907337
+      - -0.03130715493468169
+    species:
+    - Fe
+- id: eXMux0V
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: b8W80aM
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.553522087640445
+    number_of_atoms: 2
+    length:
+    - 2.866500044949065
+    - 2.866500044949065
+    - 2.866500044949065
+    vector: Cell([2.866500044949065, 2.866500044949065, 2.866500044949065])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.00174998
+      - 0.00174998
+      - 0.00174998
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: 2CmlnsY
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.551009923631156
+    number_of_atoms: 2
+    length:
+    - 2.8663981299113037
+    - 2.8663981299113037
+    - 2.8663981299113037
+    vector: Cell([2.8663981299113037, 2.8663981299113037, 2.8663981299113037])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0017499177815192796
+      - 0.0017499177815192796
+      - 0.0017499177815192796
+    - - 1.4349489802627264
+      - 1.4349489802627264
+      - 1.4349489802627264
+    species:
+    - Fe
+    - Fe
+- id: s6v1Mzf
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: uxgttE5
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 23.424311225433076
+    number_of_atoms: 2
+    length:
+    - 2.5546011685694783
+    - 2.5546011685694787
+    - 4.144670260984484
+    vector: Cell([[2.5546011685694783, 0.0, 0.0], [-1.2773005842847394, 2.2123495085185816,
+      0.0], [0.0, 0.0, 4.144670260984484]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0173006
+      - -0.0149827
+      - 4.12991
+    - - -0.0173006
+      - 1.45992
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: FmLE3yQ
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 23.429961703713754
+    number_of_atoms: 2
+    length:
+    - 2.5548065614164552
+    - 2.5548065614164557
+    - 4.145003497199655
+    vector: Cell([[2.5548065614164552, 0.0, 0.0], [-1.2774032807082278, 2.2125273839418194,
+      0.0], [0.0, 0.0, 4.145003497199655]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.017301990987967957
+      - -0.014983904626164845
+      - 4.130242049473356
+    - - -0.017301990987967916
+      - 1.460037379232754
+      - 2.0577354309742573
+    species:
+    - Fe
+    - Fe
+- id: 24sV56j
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: ndu3t0d
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.719136691161465
+    number_of_atoms: 1
+    length:
+    - 2.5495891711825984
+    - 2.549589171182604
+    - 2.549589171182604
+    vector: Cell([[2.5495891711825984, 0.0, 0.0], [1.2747945855913023, 2.208008991457847,
+      0.0], [1.274794585591302, 0.7360029971526159, 2.081730841040951]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.012609
+      - -0.0109197
+      - -0.0102952
+    species:
+    - Fe
+- id: YCCesyP
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.728425166088211
+    number_of_atoms: 1
+    length:
+    - 2.550262586577527
+    - 2.550262586577533
+    - 2.5502625865775324
+    vector: Cell([[2.550262586577527, 0.0, 0.0], [1.2751312932887666, 2.2085921862971545,
+      0.0], [1.2751312932887664, 0.736197395432385, 2.082280682408454]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.012612330377619512
+      - -0.010922584187841365
+      - -0.01029791924051617
+    species:
+    - Fe
+- id: mC64TFG
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: cOW0vbb
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.540025889923804
+    number_of_atoms: 2
+    length:
+    - 2.865952437634748
+    - 2.865952437634748
+    - 2.865952437634748
+    vector: Cell([2.865952437634748, 2.865952437634748, 2.865952437634748])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.00202378
+      - 0.00202378
+      - 0.00202378
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: LVQzumN
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.53965478171389
+    number_of_atoms: 2
+    length:
+    - 2.8659373769876475
+    - 2.8659373769876475
+    - 2.8659373769876475
+    vector: Cell([2.8659373769876475, 2.8659373769876475, 2.8659373769876475])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0020237693649887596
+      - 0.0020237693649887596
+      - 0.0020237693649887596
+    - - 1.4349924590414325
+      - 1.4349924590414325
+      - 1.4349924590414325
+    species:
+    - Fe
+    - Fe
+- id: euDID3D
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: dlP0Csu
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 23.884324402990462
+    number_of_atoms: 2
+    length:
+    - 2.565734582319533
+    - 2.565734582319538
+    - 4.189467963874029
+    vector: Cell([[2.565734582319533, 0.0, 0.0], [-1.282867291159769, 2.221991327656976,
+      0.0], [0.0, 0.0, 4.189467963874029]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0228673
+      - -0.0198037
+      - 4.15231
+    - - -0.0228673
+      - 1.46152
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: p6Wk2Te
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 23.8906047935113
+    number_of_atoms: 2
+    length:
+    - 2.5659594495128526
+    - 2.5659594495128575
+    - 4.18983513899379
+    vector: Cell([[2.5659594495128526, 0.0, 0.0], [-1.2829797247564287, 2.2221860683588686,
+      0.0], [0.0, 0.0, 4.18983513899379]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.022869304145559412
+      - -0.019805435644235002
+      - 4.152673918505807
+    - - -0.02286930414555952
+      - 1.4616480911527814
+      - 2.057750330418488
+    species:
+    - Fe
+    - Fe
+- id: 3zG6MZA
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: 9tJ78h8
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.942648215446114
+    number_of_atoms: 1
+    length:
+    - 2.565696091258909
+    - 2.5656960912589146
+    - 2.5656960912589133
+    vector: Cell([[2.565696091258909, 0.0, 0.0], [1.282848045629457, 2.2219579934206575,
+      0.0], [1.2828480456294569, 0.7406526644735523, 2.0948820862125337]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 60.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0206624
+      - -0.0178942
+      - -0.0168708
+    species:
+    - Fe
+- id: 8Th3gxM
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.945796604998613
+    number_of_atoms: 1
+    length:
+    - 2.565921532631911
+    - 2.5659215326319167
+    - 2.5659215326319154
+    vector: Cell([[2.565921532631911, 0.0, 0.0], [1.2829607663159581, 2.2221532313767414,
+      0.0], [1.282960766315958, 0.7407177437922469, 2.0950661583227896]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 60.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.020664215554009456
+      - -0.017895772319118586
+      - -0.016872282395490486
+    species:
+    - Fe
+- id: RfRle9M
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: lCoxOj6
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.279115266520655
+    number_of_atoms: 2
+    length:
+    - 2.8553246212967256
+    - 2.8553246212967256
+    - 2.8553246212967256
+    vector: Cell([2.8553246212967256, 2.8553246212967256, 2.8553246212967256])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.00733769
+      - 0.00733769
+      - 0.00733769
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: b8wV6Ta
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 23.26450950921017
+    number_of_atoms: 2
+    length:
+    - 2.854727334801627
+    - 2.854727334801627
+    - 2.854727334801627
+    vector: Cell([2.854727334801627, 2.854727334801627, 2.854727334801627])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.007336155077102081
+      - 0.007336155077102081
+      - 0.007336155077102081
+    - - 1.4346998218296885
+      - 1.4346998218296885
+      - 1.4346998218296885
+    species:
+    - Fe
+    - Fe
+- id: 5jSu9Rs
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: Vv0DdXV
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 24.654606896433886
+    number_of_atoms: 2
+    length:
+    - 2.620636305701416
+    - 2.6206363057014155
+    - 4.145280696054588
+    vector: Cell([[2.620636305701416, 0.0, 0.0], [-1.3103181528507077, 2.269537614817228,
+      0.0], [0.0, 0.0, 4.145280696054588]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0503182
+      - -0.0435768
+      - 4.13021
+    - - -0.0503182
+      - 1.46945
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: NYM8O1J
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 24.603516739115502
+    number_of_atoms: 2
+    length:
+    - 2.6188248618157597
+    - 2.6188248618157592
+    - 4.142415383017879
+    vector: Cell([[2.6188248618157597, 0.0, 0.0], [-1.3094124309078796, 2.2679688583947195,
+      0.0], [0.0, 0.0, 4.142415383017879]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.05028341890674836
+      - -0.04354667871695712
+      - 4.12735510417386
+    - - -0.0502834189067484
+      - 1.4684342824767453
+      - 2.0561477604516503
+    species:
+    - Fe
+    - Fe
+- id: wYeSIkh
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: RtotoMb
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.240555636726187
+    number_of_atoms: 1
+    length:
+    - 2.586854745648764
+    - 2.5868547456487807
+    - 2.5868547456487883
+    vector: Cell([[2.586854745648764, 0.0, 0.0], [1.2934273728243906, 2.2402819256321767,
+      0.0], [1.2934273728243941, 0.7467606418773947, 2.112158055178898]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.0312418
+      - -0.0270562
+      - -0.0255088
+    species:
+    - Fe
+- id: sqzyiWM
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 12.294917810321493
+    number_of_atoms: 1
+    length:
+    - 2.590678629166214
+    - 2.590678629166231
+    - 2.5906786291662383
+    vector: Cell([[2.590678629166214, 0.0, 0.0], [1.2953393145831156, 2.243593505899401,
+      0.0], [1.2953393145831191, 0.7478645019664695, 2.1152802429967617]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - -0.03128798156635057
+      - -0.02709619442079184
+      - -0.025546507057202964
+    species:
+    - Fe
+- id: vHE2EtX
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: ZmQYchQ
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 22.81435270739588
+    number_of_atoms: 2
+    length:
+    - 2.836194761052244
+    - 2.836194761052244
+    - 2.836194761052244
+    vector: Cell([2.836194761052244, 2.836194761052244, 2.836194761052244])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0169026
+      - 0.0169026
+      - 0.0169026
+    - - 1.435
+      - 1.435
+      - 1.435
+    species:
+    - Fe
+    - Fe
+- id: LiyrbnW
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Im-3m
+      spacegroup_number: 229
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q851536
+        lattice_parameter:
+        - 2.87
+        - 2.87
+        - 2.87
+        angle:
+        - 90.0
+        - 90.0
+        - 90.0
+      name: bcc
+  simulation_cell:
+    volume:
+      value: 22.799097078823376
+    number_of_atoms: 2
+    length:
+    - 2.8355624459158375
+    - 2.8355624459158375
+    - 2.8355624459158375
+    vector: Cell([2.8355624459158375, 2.8355624459158375, 2.8355624459158375])
+    angle:
+    - 90.0
+    - 90.0
+    - 90.0
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.016898831651658276
+      - 0.016898831651658276
+      - 0.016898831651658272
+    - - 1.4346800740791135
+      - 1.4346800740791135
+      - 1.4346800740791132
+    species:
+    - Fe
+    - Fe
+- id: zk9dlos
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: KfG7QAC
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 22.873718360671795
+    number_of_atoms: 2
+    length:
+    - 2.468592140671017
+    - 2.468592140671028
+    - 4.334185089796619
+    vector: Cell([[2.468592140671017, 0.0, 0.0], [-1.234296070335514, 2.1378635054037187,
+      0.0], [0.0, 0.0, 4.334185089796619]])
+    angle:
+    - 90.0
+    - 90.0
+    - 120.00000000000001
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0257039
+      - 0.0222603
+      - 4.22466
+    - - 0.0257039
+      - 1.4475
+      - 2.05757
+    species:
+    - Fe
+    - Fe
+- id: Ni4cwln
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: P6_3/mmc
+      spacegroup_number: 194
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q663314
+        lattice_parameter:
+        - 2.52
+        - 2.52
+        - 2.52
+        angle:
+        - 90.0
+        - 90.0
+        - 120.00000000000001
+      name: hcp
+  simulation_cell:
+    volume:
+      value: 22.903610398675312
+    number_of_atoms: 2
+    length:
+    - 2.469667015163169
+    - 2.4696670151631803
+    - 4.3360722808479615
+    vector: Cell([[2.469667015163169, 0.0, 0.0], [-1.23483350758159, 2.1387943740198025,
+      0.0], [0.0, 0.0, 4.3360722808479615]])
+    angle:
+    - 90.0
+    - 90.0
+    - 119.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.02571509199320278
+      - 0.022269992580748132
+      - 4.2264995016322064
+    - - 0.0257150919932027
+      - 1.4481302705099626
+      - 2.058465907214635
+    species:
+    - Fe
+    - Fe
+- id: FY99mh7
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.374823249999997
+    number_of_atoms: 1
+    length:
+    - 2.5243712088359747
+    - 2.5243712088359747
+    - 2.5243712088359747
+    vector: Cell([[0.0, 1.785, 1.785], [1.785, 0.0, 1.785], [1.785, 1.785, 0.0]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0
+      - 0.0
+      - 0.0
+    species:
+    - Fe
+- id: euHXvCJ
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.0770237908591
+    number_of_atoms: 1
+    length:
+    - 2.5021462782425825
+    - 2.5021462782425727
+    - 2.502146278242575
+    vector: Cell([[2.5021462782425825, 0.0, 0.0], [1.2510731391212864, 2.166922240942754,
+      0.0], [1.2510731391212875, 0.7223074136475857, 2.042993881166097]])
+    angle:
+    - 59.99999999999999
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.0111125
+      - 0.00962368
+      - 0.00907329
+    species:
+    - Fe
+- id: jAXPEoR
+  material:
+    element_ratio:
+      Fe: 1.0
+    crystal_structure:
+      spacegroup_symbol: Fm-3m
+      spacegroup_number: 225
+      unit_cell:
+        bravais_lattice: https://www.wikidata.org/wiki/Q3006714
+        lattice_parameter:
+        - 3.57
+        - 3.57
+        - 3.57
+        angle:
+        - 59.99999999999999
+        - 59.99999999999999
+        - 59.99999999999999
+      name: fcc
+  simulation_cell:
+    volume:
+      value: 11.099379748666111
+    number_of_atoms: 1
+    length:
+    - 2.5038284475094357
+    - 2.5038284475094255
+    - 2.5038284475094277
+    vector: Cell([[2.5038284475094357, 0.0, 0.0], [1.251914223754713, 2.1683790422613143,
+      0.0], [1.251914223754714, 0.7227930140871057, 2.044367366621024]])
+    angle:
+    - 59.999999999999986
+    - 59.99999999999999
+    - 59.99999999999999
+    repetitions: []
+    grain_size: null
+    number_of_grains: 0
+  atom_attribute:
+    position:
+    - - 0.01111997082860041
+      - 0.009630149909002043
+      - 0.009079389887012986
+    species:
+    - Fe
+workflow:
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - KBm7znG
+  output_sample:
+  - HCQVRyq
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.316
+    unit: EV
+    associate_to_sample:
+    - HCQVRyq
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7768
+    unit: ANGSTROM3
+    associate_to_sample:
+    - HCQVRyq
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - HCQVRyq
+  output_sample:
+  - CimIxK4
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.3169
+    unit: EV
+    associate_to_sample:
+    - CimIxK4
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7846
+    unit: ANGSTROM3
+    associate_to_sample:
+    - CimIxK4
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.3
+    unit: GigaPA
+    associate_to_sample:
+    - CimIxK4
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1103/PhysRevB.86.144111
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 8KVqZyM
+  output_sample:
+  - Dj06l0I
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2764
+    unit: EV
+    associate_to_sample:
+    - Dj06l0I
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.3438
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Dj06l0I
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - Dj06l0I
+  output_sample:
+  - mQnN8zM
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2767
+    unit: EV
+    associate_to_sample:
+    - mQnN8zM
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.338
+    unit: ANGSTROM3
+    associate_to_sample:
+    - mQnN8zM
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.17
+    unit: GigaPA
+    associate_to_sample:
+    - mQnN8zM
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1103/PhysRevB.86.144111
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 76wZjtG
+  output_sample:
+  - W9HDgeA
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2763
+    unit: EV
+    associate_to_sample:
+    - W9HDgeA
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.3521
+    unit: ANGSTROM3
+    associate_to_sample:
+    - W9HDgeA
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - W9HDgeA
+  output_sample:
+  - MOqXF5q
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2766
+    unit: EV
+    associate_to_sample:
+    - MOqXF5q
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.3487
+    unit: ANGSTROM3
+    associate_to_sample:
+    - MOqXF5q
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.2
+    unit: GigaPA
+    associate_to_sample:
+    - MOqXF5q
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1103/PhysRevB.86.144111
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - lvz5XHq
+  output_sample:
+  - z73OiF2
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0216
+    unit: EV
+    associate_to_sample:
+    - z73OiF2
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.4973
+    unit: ANGSTROM3
+    associate_to_sample:
+    - z73OiF2
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - z73OiF2
+  output_sample:
+  - ouBsj4T
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0222
+    unit: EV
+    associate_to_sample:
+    - ouBsj4T
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.5027
+    unit: ANGSTROM3
+    associate_to_sample:
+    - ouBsj4T
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.21
+    unit: GigaPA
+    associate_to_sample:
+    - ouBsj4T
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1073/pnas.2113059119
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - H52Oxxq
+  output_sample:
+  - 74QUs4S
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -3.9731
+    unit: EV
+    associate_to_sample:
+    - 74QUs4S
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 10.4879
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 74QUs4S
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 74QUs4S
+  output_sample:
+  - Kzt0wN1
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -3.9715
+    unit: EV
+    associate_to_sample:
+    - Kzt0wN1
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 10.4727
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Kzt0wN1
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.78
+    unit: GigaPA
+    associate_to_sample:
+    - Kzt0wN1
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1073/pnas.2113059119
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - W5vmxXh
+  output_sample:
+  - 2YMAlPc
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -3.9907
+    unit: EV
+    associate_to_sample:
+    - 2YMAlPc
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 10.0896
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 2YMAlPc
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 2YMAlPc
+  output_sample:
+  - iUZFfIp
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -3.9888
+    unit: EV
+    associate_to_sample:
+    - iUZFfIp
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 10.0884
+    unit: ANGSTROM3
+    associate_to_sample:
+    - iUZFfIp
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 2.46
+    unit: GigaPA
+    associate_to_sample:
+    - iUZFfIp
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1073/pnas.2113059119
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - SaWUwPk
+  output_sample:
+  - 1NVovog
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.3756
+    unit: EV
+    associate_to_sample:
+    - 1NVovog
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.3284
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 1NVovog
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 1NVovog
+  output_sample:
+  - 5122zlc
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.3759
+    unit: EV
+    associate_to_sample:
+    - 5122zlc
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.3233
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 5122zlc
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.15
+    unit: GigaPA
+    associate_to_sample:
+    - 5122zlc
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: AngularDependentPotential
+    uri: https://doi.org/10.1103/physrevmaterials.5.063607
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - zBzsLcA
+  output_sample:
+  - TQXw8Q7
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2498
+    unit: EV
+    associate_to_sample:
+    - TQXw8Q7
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.3706
+    unit: ANGSTROM3
+    associate_to_sample:
+    - TQXw8Q7
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - TQXw8Q7
+  output_sample:
+  - ExgVgwk
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2496
+    unit: EV
+    associate_to_sample:
+    - ExgVgwk
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.375
+    unit: ANGSTROM3
+    associate_to_sample:
+    - ExgVgwk
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.42
+    unit: GigaPA
+    associate_to_sample:
+    - ExgVgwk
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: AngularDependentPotential
+    uri: https://doi.org/10.1103/physrevmaterials.5.063607
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 4o5yUTr
+  output_sample:
+  - 7JaYHRg
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2836
+    unit: EV
+    associate_to_sample:
+    - 7JaYHRg
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 10.927
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 7JaYHRg
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 7JaYHRg
+  output_sample:
+  - o1vyaJ0
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2834
+    unit: EV
+    associate_to_sample:
+    - o1vyaJ0
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 10.9283
+    unit: ANGSTROM3
+    associate_to_sample:
+    - o1vyaJ0
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.69
+    unit: GigaPA
+    associate_to_sample:
+    - o1vyaJ0
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: AngularDependentPotential
+    uri: https://doi.org/10.1103/physrevmaterials.5.063607
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - Pu7yoNy
+  output_sample:
+  - QUCzviV
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1225
+    unit: EV
+    associate_to_sample:
+    - QUCzviV
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.1507
+    unit: ANGSTROM3
+    associate_to_sample:
+    - QUCzviV
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - QUCzviV
+  output_sample:
+  - Que0SWx
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1228
+    unit: EV
+    associate_to_sample:
+    - Que0SWx
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.1441
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Que0SWx
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.17
+    unit: GigaPA
+    associate_to_sample:
+    - Que0SWx
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1038/nmat3401
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - N8fukqz
+  output_sample:
+  - Tz0OeCx
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0862
+    unit: EV
+    associate_to_sample:
+    - Tz0OeCx
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.1562
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Tz0OeCx
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - Tz0OeCx
+  output_sample:
+  - o9DEvBE
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0858
+    unit: EV
+    associate_to_sample:
+    - o9DEvBE
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.1602
+    unit: ANGSTROM3
+    associate_to_sample:
+    - o9DEvBE
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.3
+    unit: GigaPA
+    associate_to_sample:
+    - o9DEvBE
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1038/nmat3401
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - Xte882n
+  output_sample:
+  - tL3E0Fq
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0005
+    unit: EV
+    associate_to_sample:
+    - tL3E0Fq
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.2255
+    unit: ANGSTROM3
+    associate_to_sample:
+    - tL3E0Fq
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - tL3E0Fq
+  output_sample:
+  - iG4kMQY
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0006
+    unit: EV
+    associate_to_sample:
+    - iG4kMQY
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.2332
+    unit: ANGSTROM3
+    associate_to_sample:
+    - iG4kMQY
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.9
+    unit: GigaPA
+    associate_to_sample:
+    - iG4kMQY
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1038/nmat3401
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - lB93qk2
+  output_sample:
+  - Lj3Hq5H
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -13.8836
+    unit: EV
+    associate_to_sample:
+    - Lj3Hq5H
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7768
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Lj3Hq5H
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - Lj3Hq5H
+  output_sample:
+  - qYZT6fF
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -13.8836
+    unit: EV
+    associate_to_sample:
+    - qYZT6fF
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7767
+    unit: ANGSTROM3
+    associate_to_sample:
+    - qYZT6fF
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.08
+    unit: GigaPA
+    associate_to_sample:
+    - qYZT6fF
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1088/0953-8984/23/20/206001
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - o4X8nUi
+  output_sample:
+  - YOnK4KH
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -13.7523
+    unit: EV
+    associate_to_sample:
+    - YOnK4KH
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.2826
+    unit: ANGSTROM3
+    associate_to_sample:
+    - YOnK4KH
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - YOnK4KH
+  output_sample:
+  - vQtwfZv
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -13.7523
+    unit: EV
+    associate_to_sample:
+    - vQtwfZv
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.2849
+    unit: ANGSTROM3
+    associate_to_sample:
+    - vQtwfZv
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.75
+    unit: GigaPA
+    associate_to_sample:
+    - vQtwfZv
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1088/0953-8984/23/20/206001
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - anjgfL5
+  output_sample:
+  - 6ZOsRtN
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -13.7523
+    unit: EV
+    associate_to_sample:
+    - 6ZOsRtN
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.2826
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 6ZOsRtN
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 6ZOsRtN
+  output_sample:
+  - WrEYGWi
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -13.7523
+    unit: EV
+    associate_to_sample:
+    - WrEYGWi
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.2849
+    unit: ANGSTROM3
+    associate_to_sample:
+    - WrEYGWi
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.75
+    unit: GigaPA
+    associate_to_sample:
+    - WrEYGWi
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1088/0953-8984/23/20/206001
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - aNYiPpY
+  output_sample:
+  - 2a1w9Gy
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1224
+    unit: EV
+    associate_to_sample:
+    - 2a1w9Gy
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.639
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 2a1w9Gy
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 2a1w9Gy
+  output_sample:
+  - 9COrTRZ
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1222
+    unit: EV
+    associate_to_sample:
+    - 9COrTRZ
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.6346
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 9COrTRZ
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.08
+    unit: GigaPA
+    associate_to_sample:
+    - 9COrTRZ
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1016/j.jnucmat.2010.05.017
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - PjfZ8jU
+  output_sample:
+  - 3P6bF2r
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0264
+    unit: EV
+    associate_to_sample:
+    - 3P6bF2r
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.7678
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 3P6bF2r
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 3P6bF2r
+  output_sample:
+  - ZTZ3BRI
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0268
+    unit: EV
+    associate_to_sample:
+    - ZTZ3BRI
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.7782
+    unit: ANGSTROM3
+    associate_to_sample:
+    - ZTZ3BRI
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.66
+    unit: GigaPA
+    associate_to_sample:
+    - ZTZ3BRI
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1016/j.jnucmat.2010.05.017
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - o8h8ShV
+  output_sample:
+  - Ot89vsm
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0001
+    unit: EV
+    associate_to_sample:
+    - Ot89vsm
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.6681
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Ot89vsm
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - Ot89vsm
+  output_sample:
+  - Imy0cqc
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0005
+    unit: EV
+    associate_to_sample:
+    - Imy0cqc
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.6834
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Imy0cqc
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.48
+    unit: GigaPA
+    associate_to_sample:
+    - Imy0cqc
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1016/j.jnucmat.2010.05.017
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - wogWiP9
+  output_sample:
+  - Owk0gPt
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.28
+    unit: EV
+    associate_to_sample:
+    - Owk0gPt
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.82
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Owk0gPt
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - Owk0gPt
+  output_sample:
+  - Vzvny97
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2801
+    unit: EV
+    associate_to_sample:
+    - Vzvny97
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.8202
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Vzvny97
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.07
+    unit: GigaPA
+    associate_to_sample:
+    - Vzvny97
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1016/j.commatsci.2009.06.025
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - rNELJNi
+  output_sample:
+  - S7JA996
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2247
+    unit: EV
+    associate_to_sample:
+    - S7JA996
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.4433
+    unit: ANGSTROM3
+    associate_to_sample:
+    - S7JA996
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - S7JA996
+  output_sample:
+  - qeL7BI2
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2248
+    unit: EV
+    associate_to_sample:
+    - qeL7BI2
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.4432
+    unit: ANGSTROM3
+    associate_to_sample:
+    - qeL7BI2
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.67
+    unit: GigaPA
+    associate_to_sample:
+    - qeL7BI2
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1016/j.commatsci.2009.06.025
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - FXrVEdt
+  output_sample:
+  - ien1HUt
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2247
+    unit: EV
+    associate_to_sample:
+    - ien1HUt
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.4433
+    unit: ANGSTROM3
+    associate_to_sample:
+    - ien1HUt
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - ien1HUt
+  output_sample:
+  - Sw9xeHf
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2248
+    unit: EV
+    associate_to_sample:
+    - Sw9xeHf
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.4432
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Sw9xeHf
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.67
+    unit: GigaPA
+    associate_to_sample:
+    - Sw9xeHf
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1016/j.commatsci.2009.06.025
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - eXMux0V
+  output_sample:
+  - b8W80aM
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.28
+    unit: EV
+    associate_to_sample:
+    - b8W80aM
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7768
+    unit: ANGSTROM3
+    associate_to_sample:
+    - b8W80aM
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - b8W80aM
+  output_sample:
+  - 2CmlnsY
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2801
+    unit: EV
+    associate_to_sample:
+    - 2CmlnsY
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7763
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 2CmlnsY
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.13
+    unit: GigaPA
+    associate_to_sample:
+    - 2CmlnsY
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1016/j.susc.2006.02.010
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - s6v1Mzf
+  output_sample:
+  - uxgttE5
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2208
+    unit: EV
+    associate_to_sample:
+    - uxgttE5
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7122
+    unit: ANGSTROM3
+    associate_to_sample:
+    - uxgttE5
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - uxgttE5
+  output_sample:
+  - FmLE3yQ
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2207
+    unit: EV
+    associate_to_sample:
+    - FmLE3yQ
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7131
+    unit: ANGSTROM3
+    associate_to_sample:
+    - FmLE3yQ
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.82
+    unit: GigaPA
+    associate_to_sample:
+    - FmLE3yQ
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1016/j.susc.2006.02.010
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 24sV56j
+  output_sample:
+  - ndu3t0d
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1813
+    unit: EV
+    associate_to_sample:
+    - ndu3t0d
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7191
+    unit: ANGSTROM3
+    associate_to_sample:
+    - ndu3t0d
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - ndu3t0d
+  output_sample:
+  - YCCesyP
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1811
+    unit: EV
+    associate_to_sample:
+    - YCCesyP
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.7222
+    unit: ANGSTROM3
+    associate_to_sample:
+    - YCCesyP
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.72
+    unit: GigaPA
+    associate_to_sample:
+    - YCCesyP
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1016/j.susc.2006.02.010
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - mC64TFG
+  output_sample:
+  - cOW0vbb
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.29
+    unit: EV
+    associate_to_sample:
+    - cOW0vbb
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.77
+    unit: ANGSTROM3
+    associate_to_sample:
+    - cOW0vbb
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - cOW0vbb
+  output_sample:
+  - LVQzumN
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.2901
+    unit: EV
+    associate_to_sample:
+    - LVQzumN
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.77
+    unit: ANGSTROM3
+    associate_to_sample:
+    - LVQzumN
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.05
+    unit: GigaPA
+    associate_to_sample:
+    - LVQzumN
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1103/physrevb.69.144113
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - euDID3D
+  output_sample:
+  - dlP0Csu
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1957
+    unit: EV
+    associate_to_sample:
+    - dlP0Csu
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.9422
+    unit: ANGSTROM3
+    associate_to_sample:
+    - dlP0Csu
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - dlP0Csu
+  output_sample:
+  - p6Wk2Te
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1958
+    unit: EV
+    associate_to_sample:
+    - p6Wk2Te
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.9432
+    unit: ANGSTROM3
+    associate_to_sample:
+    - p6Wk2Te
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.65
+    unit: GigaPA
+    associate_to_sample:
+    - p6Wk2Te
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1103/physrevb.69.144113
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 3zG6MZA
+  output_sample:
+  - 9tJ78h8
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1957
+    unit: EV
+    associate_to_sample:
+    - 9tJ78h8
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.9426
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 9tJ78h8
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 9tJ78h8
+  output_sample:
+  - 8Th3gxM
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1958
+    unit: EV
+    associate_to_sample:
+    - 8Th3gxM
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.9437
+    unit: ANGSTROM3
+    associate_to_sample:
+    - 8Th3gxM
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.65
+    unit: GigaPA
+    associate_to_sample:
+    - 8Th3gxM
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1103/physrevb.69.144113
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - RfRle9M
+  output_sample:
+  - lCoxOj6
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1224
+    unit: EV
+    associate_to_sample:
+    - lCoxOj6
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.6396
+    unit: ANGSTROM3
+    associate_to_sample:
+    - lCoxOj6
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - lCoxOj6
+  output_sample:
+  - b8wV6Ta
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.1222
+    unit: EV
+    associate_to_sample:
+    - b8wV6Ta
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.6371
+    unit: ANGSTROM3
+    associate_to_sample:
+    - b8wV6Ta
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.08
+    unit: GigaPA
+    associate_to_sample:
+    - b8wV6Ta
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1080/14786430310001613264
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - 5jSu9Rs
+  output_sample:
+  - Vv0DdXV
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0049
+    unit: EV
+    associate_to_sample:
+    - Vv0DdXV
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.3273
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Vv0DdXV
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - Vv0DdXV
+  output_sample:
+  - NYM8O1J
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0052
+    unit: EV
+    associate_to_sample:
+    - NYM8O1J
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.3188
+    unit: ANGSTROM3
+    associate_to_sample:
+    - NYM8O1J
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.47
+    unit: GigaPA
+    associate_to_sample:
+    - NYM8O1J
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1080/14786430310001613264
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - wYeSIkh
+  output_sample:
+  - RtotoMb
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.002
+    unit: EV
+    associate_to_sample:
+    - RtotoMb
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.2406
+    unit: ANGSTROM3
+    associate_to_sample:
+    - RtotoMb
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - RtotoMb
+  output_sample:
+  - sqzyiWM
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -4.0026
+    unit: EV
+    associate_to_sample:
+    - sqzyiWM
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 12.2586
+    unit: ANGSTROM3
+    associate_to_sample:
+    - sqzyiWM
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.4
+    unit: GigaPA
+    associate_to_sample:
+    - sqzyiWM
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: EmbeddedAtomMethod
+    uri: https://doi.org/10.1080/14786430310001613264
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - vHE2EtX
+  output_sample:
+  - ZmQYchQ
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -5.3056
+    unit: EV
+    associate_to_sample:
+    - ZmQYchQ
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.4072
+    unit: ANGSTROM3
+    associate_to_sample:
+    - ZmQYchQ
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - ZmQYchQ
+  output_sample:
+  - LiyrbnW
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -5.3059
+    unit: EV
+    associate_to_sample:
+    - LiyrbnW
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.4046
+    unit: ANGSTROM3
+    associate_to_sample:
+    - LiyrbnW
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 1.09
+    unit: GigaPA
+    associate_to_sample:
+    - LiyrbnW
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: AtomicClusterExpansion
+    uri: https://doi.org/10.1038/s41524-025-01574-w
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - zk9dlos
+  output_sample:
+  - KfG7QAC
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -5.1294
+    unit: EV
+    associate_to_sample:
+    - KfG7QAC
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.4369
+    unit: ANGSTROM3
+    associate_to_sample:
+    - KfG7QAC
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - KfG7QAC
+  output_sample:
+  - Ni4cwln
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -5.1299
+    unit: EV
+    associate_to_sample:
+    - Ni4cwln
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.4418
+    unit: ANGSTROM3
+    associate_to_sample:
+    - Ni4cwln
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.63
+    unit: GigaPA
+    associate_to_sample:
+    - Ni4cwln
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: AtomicClusterExpansion
+    uri: https://doi.org/10.1038/s41524-025-01574-w
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - FY99mh7
+  output_sample:
+  - euHXvCJ
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -5.1468
+    unit: EV
+    associate_to_sample:
+    - euHXvCJ
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.077
+    unit: ANGSTROM3
+    associate_to_sample:
+    - euHXvCJ
+    basename: Volume
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  - CellVolumeRelaxation
+  interatomic_potential:
+    potential_type: null
+    uri: null
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
+- algorithm: EquationOfStateFit
+  method: MolecularStatics
+  xc_functional: null
+  input_parameter: []
+  input_sample:
+  - euHXvCJ
+  output_sample:
+  - jAXPEoR
+  calculated_property:
+  - label: EquilibriumEnergy
+    value: -5.1475
+    unit: EV
+    associate_to_sample:
+    - jAXPEoR
+    basename: TotalEnergy
+  - label: EquilibriumVolume
+    value: 11.0845
+    unit: ANGSTROM3
+    associate_to_sample:
+    - jAXPEoR
+    basename: Volume
+  - label: BulkModulus
+    basename: BulkModulus
+    value: 0.63
+    unit: GigaPA
+    associate_to_sample:
+    - jAXPEoR
+  degrees_of_freedom:
+  - AtomicPositionRelaxation
+  interatomic_potential:
+    potential_type: AtomicClusterExpansion
+    uri: https://doi.org/10.1038/s41524-025-01574-w
+  software:
+    uri: https://doi.org/10.1016/j.cpc.2021.108171
+    label: LAMMPS
+  workflow_manager:
+    uri: null
+    version: null
+    label: null
+  thermodynamic_ensemble: MicrocanonicalEnsemble
