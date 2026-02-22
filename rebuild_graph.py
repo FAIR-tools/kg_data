@@ -2,14 +2,13 @@
 """
 rebuild_graph.py
 ----------------
-Wipes the existing graph database and rebuilds it from scratch by parsing
-every YAML file found under the data/ directory using atomRDF WorkflowParser.
+Incrementally updates the knowledge graph: only parses YAML files that are
+new or have changed since the last run, leaving the existing graph intact.
+
+Pass --full to force a complete wipe + rebuild from scratch.
 
 Run inside the Docker container:
-    docker exec kg_frontend_app python rebuild_graph.py
-
-Or directly on the VM (with the venv activated):
-    python rebuild_graph.py
+    docker compose exec app python /kg_data/rebuild_graph.py
 
 Environment variables:
     DATA_DIR   — override the data directory (default: /data)
@@ -19,7 +18,10 @@ Environment variables:
 import os
 import sys
 import glob
+import json
+import shutil
 import logging
+import argparse
 
 logging.basicConfig(
     level=logging.INFO,
@@ -28,12 +30,16 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ── Paths ────────────────────────────────────────────────────────────────────
-DATA_DIR   = os.environ.get("DATA_DIR",  "/data")
-DB_PATH    = os.path.join(DATA_DIR, "graph.db")
-STORE_PATH = os.path.join(DATA_DIR, "structure_store")
+parser_args = argparse.ArgumentParser()
+parser_args.add_argument("--full", action="store_true", help="Wipe and rebuild from scratch")
+args = parser_args.parse_args()
 
-# YAML files live in a data/ folder next to this script in the kg_data repo
+# ── Paths ────────────────────────────────────────────────────────────────────
+DATA_DIR      = os.environ.get("DATA_DIR",  "/data")
+DB_PATH       = os.path.join(DATA_DIR, "graph.db")
+STORE_PATH    = os.path.join(DATA_DIR, "structure_store")
+MANIFEST_PATH = os.path.join(DATA_DIR, "parsed_manifest.json")
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 YAML_DIR   = os.environ.get("YAML_DIR", os.path.join(SCRIPT_DIR, "data"))
 
@@ -50,56 +56,78 @@ yaml_files = sorted(
     glob.glob(os.path.join(YAML_DIR, "**", "*.yaml"), recursive=True) +
     glob.glob(os.path.join(YAML_DIR, "**", "*.yml"),  recursive=True)
 )
+log.info("Found %d YAML file(s) in %s", len(yaml_files), YAML_DIR)
 
-if not yaml_files:
-    log.warning("No YAML files found in %s — graph will be empty.", YAML_DIR)
-else:
-    log.info("Found %d YAML file(s) in %s", len(yaml_files), YAML_DIR)
+# ── Full rebuild: wipe everything ─────────────────────────────────────────────
+if args.full:
+    log.info("--full flag set: wiping existing graph at %s", DB_PATH)
+    if os.path.exists(DB_PATH):
+        os.remove(DB_PATH)
+    if os.path.isdir(STORE_PATH):
+        shutil.rmtree(STORE_PATH)
+    if os.path.exists(MANIFEST_PATH):
+        os.remove(MANIFEST_PATH)
 
-# ── Wipe and recreate the graph ───────────────────────────────────────────────
-log.info("Wiping existing graph at %s", DB_PATH)
-
-# Remove old DB and structure store
-import shutil
-if os.path.exists(DB_PATH):
-    os.remove(DB_PATH)
-    log.info("Removed %s", DB_PATH)
-if os.path.isdir(STORE_PATH):
-    shutil.rmtree(STORE_PATH)
-    log.info("Removed %s", STORE_PATH)
 os.makedirs(STORE_PATH, exist_ok=True)
 
-# ── Create fresh KnowledgeGraph ───────────────────────────────────────────────
-log.info("Creating fresh KnowledgeGraph at %s", DB_PATH)
+# ── Load manifest (path → mtime) ──────────────────────────────────────────────
+manifest: dict[str, float] = {}
+if os.path.exists(MANIFEST_PATH):
+    try:
+        manifest = json.loads(Path(MANIFEST_PATH).read_text())
+    except Exception:
+        manifest = {}
+
+from pathlib import Path
+
+# ── Determine which files need parsing ────────────────────────────────────────
+to_parse = []
+for yf in yaml_files:
+    mtime = os.path.getmtime(yf)
+    if manifest.get(yf) != mtime:
+        to_parse.append((yf, mtime))
+
+if not to_parse:
+    log.info("All files already up-to-date — nothing to do.")
+    sys.exit(0)
+
+log.info("%d file(s) to parse (new or changed)", len(to_parse))
+
+# ── Open or create KnowledgeGraph ─────────────────────────────────────────────
+log.info("Opening KnowledgeGraph at %s", DB_PATH)
 kg = KnowledgeGraph(
     store="SQLAlchemy",
     store_file=DB_PATH,
     structure_store=STORE_PATH,
 )
 
-# ── Parse all YAML files ──────────────────────────────────────────────────────
-parser = WorkflowParser(kg=kg)
+# ── Parse only new/changed files ─────────────────────────────────────────────
+wp = WorkflowParser(kg=kg)
 errors = []
 
-for yf in yaml_files:
+for yf, mtime in to_parse:
     log.info("Parsing %s", yf)
     try:
-        result = parser.parse(yf)
+        result = wp.parse(yf)
         n_samples = len(result.get("sample_map", {}))
         log.info("  → %d sample(s) added/deduplicated", n_samples)
+        manifest[yf] = mtime          # mark as successfully parsed
     except Exception as exc:
         log.error("  ✗ Failed to parse %s: %s", yf, exc)
         errors.append((yf, str(exc)))
 
+# ── Save updated manifest ─────────────────────────────────────────────────────
+Path(MANIFEST_PATH).write_text(json.dumps(manifest, indent=2))
+
 # ── Summary ───────────────────────────────────────────────────────────────────
 total_samples = len(kg.sample_ids)
 log.info("─" * 60)
-log.info("Rebuild complete. Total samples in graph: %d", total_samples)
+log.info("Done. Total samples in graph: %d", total_samples)
 if errors:
     log.warning("%d file(s) had errors:", len(errors))
     for yf, err in errors:
         log.warning("  %s: %s", yf, err)
     sys.exit(1)
 else:
-    log.info("All files parsed successfully.")
+    log.info("All new files parsed successfully.")
     sys.exit(0)
