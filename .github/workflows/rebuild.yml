@@ -21,18 +21,40 @@ jobs:
           key: ${{ secrets.VM_SSH_KEY }}
           script: |
             set -e
+            RELOAD_TOKEN="${{ secrets.RELOAD_TOKEN }}"
+            EXEC="docker compose -f /home/atomrdf/kg_frontend/docker-compose.yml exec -T app"
 
             echo "── Pulling latest kg_data ──"
             cd ~/kg_data
             git pull origin main
 
             echo "── Running rebuild_graph.py inside container ──"
-            docker compose -f /home/atomrdf/kg_frontend/docker-compose.yml exec -T app \
-              /opt/conda/bin/python /kg_data/rebuild_graph.py
+            OUTPUT=$($EXEC /opt/conda/bin/python /kg_data/rebuild_graph.py 2>&1) || true
+            echo "$OUTPUT"
+
+            if echo "$OUTPUT" | grep -q "FULL_REBUILD_DONE"; then
+              echo "── Full rebuild: atomically swapping DB (close → mv → reload) ──"
+
+              # Close the app's KG to release all SQLAlchemy file descriptors
+              curl -sf -X POST -H "X-Reload-Token: $RELOAD_TOKEN" \
+                http://localhost:8000/api/admin/close || true
+              sleep 1
+
+              # Atomic swap: replace live DB with newly built one
+              $EXEC sh -c "
+                mv /data/graph.db /data/graph_old.db 2>/dev/null || true
+                mv /data/graph_new.db /data/graph.db
+                rm -rf /data/structure_store
+                mv /data/structure_store_new /data/structure_store
+                mv /data/parsed_manifest_new.json /data/parsed_manifest.json
+                rm -f /data/graph_old.db
+              "
+            else
+              echo "── Incremental update done ──"
+            fi
 
             echo "── Signalling app to reload KG singleton ──"
-            curl -sf -X POST \
-              -H "X-Reload-Token: ${{ secrets.RELOAD_TOKEN }}" \
+            curl -sf -X POST -H "X-Reload-Token: $RELOAD_TOKEN" \
               http://localhost:8000/api/admin/reload
 
             echo "── Done ──"
