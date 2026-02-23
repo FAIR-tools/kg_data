@@ -18,21 +18,40 @@ echo "==> Building KG locally (output: $BUILD_DIR)..."
 mkdir -p "$BUILD_DIR"
 DATA_DIR="$BUILD_DIR" python "$(dirname "$0")/rebuild_graph.py" $FULL_FLAG
 
-# ── 2. Close the live app's DB connection ────────────────────────────────────
+# ── 2. Generate cache (samples, workflows, properties JSON) ──────────────────
+echo "==> Generating JSON cache files..."
+DATA_DIR="$BUILD_DIR" python "$(dirname "$0")/generate_cache.py"
+
+# ── 3. Close the live app's DB connection ────────────────────────────────────
 echo "==> Closing app DB connection on VM..."
 ssh -i "$SSH_KEY" "$VM" \
   "curl -sf -X POST -H 'X-Reload-Token: $RELOAD_TOKEN' http://localhost:8000/api/admin/close && echo '  closed'"
 
-# ── 3. Upload new DB and structure store ─────────────────────────────────────
-echo "==> Uploading graph.db to VM..."
-scp -i "$SSH_KEY" "$BUILD_DIR/graph.db" "$VM:/data/graph_new.db"
-
-if [[ -d "$BUILD_DIR/structure_store" ]]; then
-  echo "==> Uploading structure_store to VM..."
-  scp -i "$SSH_KEY" -qr "$BUILD_DIR/structure_store" "$VM:/data/structure_store_new"
+# ── 4. Resolve DB / store / manifest filenames (full rebuild uses _new suffix) ─
+if [[ -f "$BUILD_DIR/graph_new.db" ]]; then
+  LOCAL_DB="$BUILD_DIR/graph_new.db"
+  LOCAL_STORE="$BUILD_DIR/structure_store_new"
+  LOCAL_MANIFEST="$BUILD_DIR/parsed_manifest_new.json"
+else
+  LOCAL_DB="$BUILD_DIR/graph.db"
+  LOCAL_STORE="$BUILD_DIR/structure_store"
+  LOCAL_MANIFEST="$BUILD_DIR/parsed_manifest.json"
 fi
 
-# ── 4. Atomic swap on VM ─────────────────────────────────────────────────────
+echo "==> Uploading $LOCAL_DB to VM..."
+scp -i "$SSH_KEY" "$LOCAL_DB" "$VM:/data/graph_new.db"
+
+if [[ -d "$LOCAL_STORE" ]]; then
+  echo "==> Uploading structure_store to VM..."
+  scp -i "$SSH_KEY" -qr "$LOCAL_STORE" "$VM:/data/structure_store_new"
+fi
+
+if [[ -d "$BUILD_DIR/cache" ]]; then
+  echo "==> Uploading cache dir to VM..."
+  scp -i "$SSH_KEY" -qr "$BUILD_DIR/cache" "$VM:/data/cache_new"
+fi
+
+# ── 5. Atomic swap on VM ─────────────────────────────────────────────────────
 echo "==> Swapping DB on VM..."
 ssh -i "$SSH_KEY" "$VM" "
   rm -f /data/graph.db
@@ -41,15 +60,30 @@ ssh -i "$SSH_KEY" "$VM" "
     rm -rf /data/structure_store
     mv /data/structure_store_new /data/structure_store
   fi
+  if [ -d /data/cache_new ]; then
+    rm -rf /data/cache
+    mv /data/cache_new /data/cache
+  fi
   echo '  swapped'
 "
 
-# ── 5. Upload manifest ───────────────────────────────────────────────────────
-if [[ -f "$BUILD_DIR/parsed_manifest.json" ]]; then
-  scp -i "$SSH_KEY" "$BUILD_DIR/parsed_manifest.json" "$VM:/data/parsed_manifest.json"
+# ── 6. Upload manifest ───────────────────────────────────────────────────────
+if [[ -f "$LOCAL_MANIFEST" ]]; then
+  scp -i "$SSH_KEY" "$LOCAL_MANIFEST" "$VM:/data/parsed_manifest.json"
 fi
 
-# ── 6. Signal app to reload ──────────────────────────────────────────────────
+# ── 7. Patch structure-store paths in the DB ────────────────────────────────
+# The locally-built DB contains Mac absolute paths pointing to $BUILD_DIR.
+# patch_paths.py rewrites all CMSO.hasPath triples to /data/structure_store/.
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+echo "==> Patching structure-store paths in DB on VM..."
+scp -i "$SSH_KEY" "$SCRIPT_DIR/patch_paths.py" "$VM:/tmp/patch_paths.py"
+ssh -i "$SSH_KEY" "$VM" \
+  "docker cp /tmp/patch_paths.py kg_frontend_app:/tmp/patch_paths.py && \
+   docker exec kg_frontend_app /opt/conda/bin/python /tmp/patch_paths.py && \
+   echo '  paths patched'"
+
+# ── 7. Signal app to reload ──────────────────────────────────────────────────
 echo "==> Reloading KG in app..."
 ssh -i "$SSH_KEY" "$VM" \
   "curl -sf -X POST -H 'X-Reload-Token: $RELOAD_TOKEN' http://localhost:8000/api/admin/reload && echo '  reloaded'"
