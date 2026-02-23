@@ -67,6 +67,13 @@ log.info("KG loaded — %d triples", sum(1 for _ in g.triples((None, None, None)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# SHARED NAMESPACES
+# ══════════════════════════════════════════════════════════════════════════════
+_ASMO_NS   = "http://purls.helmholtz-metadaten.de/asmo/"
+_PROV_NS   = "http://www.w3.org/ns/prov#"
+_CMSO_NS   = "http://purls.helmholtz-metadaten.de/cmso/"
+
+# ══════════════════════════════════════════════════════════════════════════════
 # SAMPLES
 # ══════════════════════════════════════════════════════════════════════════════
 _CMSO_HAS_SPECIES = URIRef(f"{_CMSO_NS}hasSpecies")
@@ -129,10 +136,6 @@ def build_samples():
 # ══════════════════════════════════════════════════════════════════════════════
 # WORKFLOWS  (mirrors app/routes/workflows.py logic)
 # ══════════════════════════════════════════════════════════════════════════════
-_ASMO_NS   = "http://purls.helmholtz-metadaten.de/asmo/"
-_PROV_NS   = "http://www.w3.org/ns/prov#"
-_CMSO_NS   = "http://purls.helmholtz-metadaten.de/cmso/"
-
 _ENERGY_CALC  = URIRef(f"{_ASMO_NS}EnergyCalculation")
 _SIMULATION   = URIRef(f"{_ASMO_NS}Simulation")
 _PROV_ASSOC   = URIRef(f"{_PROV_NS}wasAssociatedWith")
