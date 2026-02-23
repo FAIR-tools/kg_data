@@ -69,13 +69,61 @@ log.info("KG loaded — %d triples", sum(1 for _ in g.triples((None, None, None)
 # ══════════════════════════════════════════════════════════════════════════════
 # SAMPLES
 # ══════════════════════════════════════════════════════════════════════════════
+_CMSO_HAS_SPECIES = URIRef(f"{_CMSO_NS}hasSpecies")
+_CMSO_HAS_ELEMENT = URIRef(f"{_CMSO_NS}hasElement")
+_CMSO_HAS_CHEM_SYM = URIRef(f"{_CMSO_NS}hasChemicalSymbol")
+_CMSO_HAS_ELEM_RATIO = URIRef(f"{_CMSO_NS}hasElementRatio")
+
+
+def _build_element_map() -> dict:
+    """Return {sample_uri_str: {"Fe": 0.5, "C": 0.5, ...}} for all samples."""
+    result: dict[str, dict[str, float]] = {}
+    for sample, _, species in g.triples((None, _CMSO_HAS_SPECIES, None)):
+        er: dict[str, float] = {}
+        for _, _, element in g.triples((species, _CMSO_HAS_ELEMENT, None)):
+            symbol = g.value(element, _CMSO_HAS_CHEM_SYM)
+            ratio  = g.value(element, _CMSO_HAS_ELEM_RATIO)
+            if symbol is not None:
+                try:
+                    er[str(symbol)] = float(ratio) if ratio is not None else 1.0
+                except (ValueError, TypeError):
+                    er[str(symbol)] = 1.0
+        if er:
+            result[str(sample)] = er
+    return result
+
+
+def _make_formula(er: dict) -> str:
+    """Convert {"Fe": 0.5, "C": 0.5} → "C0.5Fe0.5" (alphabetical order)."""
+    if not er:
+        return "?"
+    parts = []
+    for el in sorted(er.keys()):
+        ratio = er[el]
+        if abs(ratio - 1.0) < 0.001:
+            parts.append(el)
+        else:
+            r_str = f"{ratio:.3f}".rstrip("0").rstrip(".")
+            parts.append(f"{el}{r_str}")
+    return "".join(parts)
+
+
 def build_samples():
+    el_map = _build_element_map()
+    log.info("  Element map built for %d samples", len(el_map))
     ids   = kg.sample_ids    # list[URIRef]
     names = kg.sample_names  # list[str | None]
-    return [
-        {"id": str(sid), "name": sname or ""}
-        for sid, sname in zip(ids, names)
-    ]
+    out = []
+    for sid, sname in zip(ids, names):
+        er = el_map.get(str(sid), {})
+        out.append({
+            "id":            str(sid),
+            "name":          sname or "",
+            "elements":      sorted(er.keys()),
+            "element_ratio": er,
+            "formula":       _make_formula(er),
+        })
+    return out
 
 
 # ══════════════════════════════════════════════════════════════════════════════
