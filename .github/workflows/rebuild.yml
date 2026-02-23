@@ -1,11 +1,7 @@
 name: Rebuild Knowledge Graph
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'data/**'        # only trigger when YAML data changes
-  workflow_dispatch:     # allow manual trigger from GitHub Actions UI
+  workflow_dispatch:     # manual trigger only — data is deployed via push_data.sh
 
 jobs:
   rebuild:
