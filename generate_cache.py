@@ -66,6 +66,9 @@ log.info("KG loaded — %d triples", sum(1 for _ in g.triples((None, None, None)
 _ASMO_NS = "http://purls.helmholtz-metadaten.de/asmo/"
 _PROV_NS = "http://www.w3.org/ns/prov#"
 _CMSO_NS = "http://purls.helmholtz-metadaten.de/cmso/"
+_DCTERMS_NS = "http://purl.org/dc/terms/"
+_DCAT_NS = "http://www.w3.org/ns/dcat#"
+_FOAF_NS = "http://xmlns.com/foaf/0.1/"
 
 # ══════════════════════════════════════════════════════════════════════════════
 # SAMPLES
@@ -74,6 +77,13 @@ _CMSO_HAS_SPECIES = URIRef(f"{_CMSO_NS}hasSpecies")
 _CMSO_HAS_ELEMENT = URIRef(f"{_CMSO_NS}hasElement")
 _CMSO_HAS_CHEM_SYM = URIRef(f"{_CMSO_NS}hasChemicalSymbol")
 _CMSO_HAS_ELEM_RATIO = URIRef(f"{_CMSO_NS}hasElementRatio")
+_DCTERMS_IS_PART_OF = URIRef(f"{_DCTERMS_NS}isPartOf")
+_DCTERMS_IS_REF_BY = URIRef(f"{_DCTERMS_NS}isReferencedBy")
+_DCTERMS_TITLE = URIRef(f"{_DCTERMS_NS}title")
+_DCTERMS_IDENTIFIER = URIRef(f"{_DCTERMS_NS}identifier")
+_DCTERMS_CREATOR = URIRef(f"{_DCTERMS_NS}creator")
+_FOAF_NAME = URIRef(f"{_FOAF_NS}name")
+_DCAT_DATASET = URIRef(f"{_DCAT_NS}Dataset")
 
 
 def _build_element_map() -> dict:
@@ -112,6 +122,12 @@ def _make_formula(er: dict) -> str:
 def build_samples():
     el_map = _build_element_map()
     log.info("  Element map built for %d samples", len(el_map))
+
+    # Build sample → dataset URI map
+    dataset_uri_map: dict[str, str] = {}
+    for s, _, d in g.triples((None, _DCTERMS_IS_PART_OF, None)):
+        dataset_uri_map[str(s)] = str(d)
+
     ids = kg.sample_ids  # list[URIRef]
     names = kg.sample_names  # list[str | None]
     out = []
@@ -124,6 +140,7 @@ def build_samples():
                 "elements": sorted(er.keys()),
                 "element_ratio": er,
                 "formula": _make_formula(er),
+                "dataset_uri": dataset_uri_map.get(str(sid), ""),
             }
         )
     return out
@@ -231,22 +248,20 @@ def build_workflows():
 # Scalar ASMO property types we surface in the Properties tab.
 # Array-only types (Stress, Strain, etc. from MD) are also included but
 # shown as "N-step array" since their values live in structure-store files.
-_PROP_TYPES = [
-    "TotalEnergy",
-    "Energy",
-    "BulkModulus",
-    "Volume",
-    "Pressure",
-    "VirialPressure",
-    "FreeEnergy",
-    "Temperature",
-    "FlowStress",
-    "Stress",
-    "Strain",
-    "StrainRate",
-    "EquationOfStateFit",
-    "ThermodynamicIntegration",
-]
+# Instead of a hardcoded list, we dynamically discover calculated properties
+# by finding all triples with asmo:wasCalculatedBy (= actual calculated output).
+# Types that are NOT properties (workflows, potentials, methods) are skipped.
+_SKIP_TYPES = {
+    f"{_ASMO_NS}EnergyCalculation",
+    f"{_ASMO_NS}Simulation",
+    f"{_ASMO_NS}InteratomicPotential",
+    f"{_ASMO_NS}ModifiedEmbeddedAtomModel",
+    f"{_ASMO_NS}EmbeddedAtomModel",
+    f"{_ASMO_NS}PairPotential",
+    f"{_ASMO_NS}MolecularStatics",
+    f"{_ASMO_NS}MolecularDynamics",
+    f"{_ASMO_NS}DensityFunctionalTheory",
+}
 
 _ASMO_HAS_VALUE = URIRef(f"{_ASMO_NS}hasValue")
 _ASMO_HAS_UNIT = URIRef(f"{_ASMO_NS}hasUnit")
@@ -269,52 +284,111 @@ def build_properties():
             sim_to_samples.setdefault(wf_str, []).append(str(s))
 
     records = []
-    for pt in _PROP_TYPES:
-        pt_uri = URIRef(f"{_ASMO_NS}{pt}")
-        for prop_node, _, _ in g.triples((None, RDF.type, pt_uri)):
-            label_lit = g.value(prop_node, RDFS.label)
-            label = str(label_lit) if label_lit else pt
 
-            value_lit = g.value(prop_node, _ASMO_HAS_VALUE)
-            has_path = g.value(prop_node, _CMSO_HAS_PATH) is not None
+    # Dynamically find all property nodes that have asmo:wasCalculatedBy
+    for prop_node, _, wf_node in g.triples((None, _ASMO_CALC_BY, None)):
+        prop_type_uri = g.value(prop_node, RDF.type)
+        if prop_type_uri is None:
+            continue
+        type_str = str(prop_type_uri)
+        if type_str in _SKIP_TYPES or not type_str.startswith(_ASMO_NS):
+            continue
 
-            if value_lit is not None:
-                try:
-                    value = float(value_lit.toPython())
-                except Exception:
-                    value = str(value_lit)
-                value_is_array = False
-            elif has_path:
-                value = None
-                value_is_array = True
-            else:
-                # no value at all — skip
-                continue
+        pt = type_str[len(_ASMO_NS):]
 
-            unit_node = g.value(prop_node, _ASMO_HAS_UNIT)
-            unit = _qudt_label(str(unit_node)) if unit_node else ""
-            unit_uri = str(unit_node) if unit_node else ""
+        label_lit = g.value(prop_node, RDFS.label)
+        label = str(label_lit) if label_lit else pt
 
-            wf_node = g.value(prop_node, _ASMO_CALC_BY)
-            wf_id = str(wf_node) if wf_node else ""
-            samples = sim_to_samples.get(wf_id, [])
+        value_lit = g.value(prop_node, _ASMO_HAS_VALUE)
+        has_path = g.value(prop_node, _CMSO_HAS_PATH) is not None
 
-            records.append(
-                {
-                    "id": str(prop_node),
-                    "type": pt,
-                    "label": label,
-                    "value": value,
-                    "value_is_array": value_is_array,
-                    "unit": unit,
-                    "unit_uri": unit_uri,
-                    "workflow_id": wf_id,
-                    "sample_ids": samples,
-                }
-            )
+        if value_lit is not None:
+            try:
+                value = float(value_lit.toPython())
+            except Exception:
+                value = str(value_lit)
+            value_is_array = False
+        elif has_path:
+            value = None
+            value_is_array = True
+        else:
+            # no value at all — skip
+            continue
+
+        unit_node = g.value(prop_node, _ASMO_HAS_UNIT)
+        unit = _qudt_label(str(unit_node)) if unit_node else ""
+        unit_uri = str(unit_node) if unit_node else ""
+
+        wf_id = str(wf_node) if wf_node else ""
+        samples = sim_to_samples.get(wf_id, [])
+
+        records.append(
+            {
+                "id": str(prop_node),
+                "type": pt,
+                "label": label,
+                "value": value,
+                "value_is_array": value_is_array,
+                "unit": unit,
+                "unit_uri": unit_uri,
+                "workflow_id": wf_id,
+                "sample_ids": samples,
+            }
+        )
 
     records.sort(key=lambda r: (r["type"], r["label"], r["id"]))
     log.info("  Properties: %d records", len(records))
+    return records
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# DATASETS
+# ══════════════════════════════════════════════════════════════════════════════
+
+
+def build_datasets():
+    # Count samples per dataset
+    sample_counts: dict[str, int] = {}
+    for s, _, d in g.triples((None, _DCTERMS_IS_PART_OF, None)):
+        k = str(d)
+        sample_counts[k] = sample_counts.get(k, 0) + 1
+
+    records = []
+    for d, _, _ in g.triples((None, RDF.type, _DCAT_DATASET)):
+        d_uri = str(d)
+        title = str(g.value(d, _DCTERMS_TITLE) or "")
+        identifier = str(g.value(d, _DCTERMS_IDENTIFIER) or d_uri)
+
+        # Publication referenced by this dataset
+        pub_node = g.value(d, _DCTERMS_IS_REF_BY)
+        pub_title = ""
+        pub_doi = ""
+        if pub_node:
+            pub_title = str(g.value(pub_node, _DCTERMS_TITLE) or "")
+            pub_doi = str(g.value(pub_node, _DCTERMS_IDENTIFIER) or "")
+
+        # Authors (foaf:name of dcterms:creator persons)
+        authors = []
+        for _, _, person in g.triples((d, _DCTERMS_CREATOR, None)):
+            name = g.value(person, _FOAF_NAME)
+            if name:
+                authors.append(str(name))
+
+        records.append(
+            {
+                "uri": d_uri,
+                "title": title,
+                "identifier": identifier,
+                "publication_title": pub_title,
+                "publication_doi": pub_doi,
+                "authors": sorted(authors),
+                "sample_count": sample_counts.get(d_uri, 0),
+            }
+        )
+
+    # Sort by sample count descending
+    records.sort(key=lambda x: -x["sample_count"])
+    log.info("  Datasets: %d records", len(records))
     return records
 
 
@@ -332,10 +406,14 @@ log.info("  Workflows: %d", wf_data["total"])
 log.info("Building properties cache …")
 prop_data = build_properties()
 
+log.info("Building datasets cache …")
+datasets_data = build_datasets()
+
 for fname, data in [
     ("samples.json", samples_data),
     ("workflows.json", wf_data),
     ("properties.json", prop_data),
+    ("datasets.json", datasets_data),
 ]:
     out = os.path.join(CACHE_DIR, fname)
     with open(out, "w") as f:
