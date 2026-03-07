@@ -35,21 +35,23 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 parser_args = argparse.ArgumentParser()
-parser_args.add_argument("--full", action="store_true", help="Wipe and rebuild from scratch")
+parser_args.add_argument(
+    "--full", action="store_true", help="Wipe and rebuild from scratch"
+)
 args = parser_args.parse_args()
 
 # ── Paths ────────────────────────────────────────────────────────────────────
-DATA_DIR      = os.environ.get("DATA_DIR",  "/data")
-DB_PATH       = os.path.join(DATA_DIR, "graph.db")
-STORE_PATH    = os.path.join(DATA_DIR, "structure_store")
+DATA_DIR = os.environ.get("DATA_DIR", "/data")
+DB_PATH = os.path.join(DATA_DIR, "graph.db")
+STORE_PATH = os.path.join(DATA_DIR, "structure_store")
 MANIFEST_PATH = os.path.join(DATA_DIR, "parsed_manifest.json")
 
 # Temp paths used during full rebuilds (avoids touching the live DB until done)
-DB_NEW_PATH    = os.path.join(DATA_DIR, "graph_new.db")
+DB_NEW_PATH = os.path.join(DATA_DIR, "graph_new.db")
 STORE_NEW_PATH = os.path.join(DATA_DIR, "structure_store_new")
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-YAML_DIR   = os.environ.get("YAML_DIR", os.path.join(SCRIPT_DIR, "data"))
+YAML_DIR = os.environ.get("YAML_DIR", os.path.join(SCRIPT_DIR, "data"))
 
 # ── Imports ──────────────────────────────────────────────────────────────────
 try:
@@ -61,8 +63,8 @@ except ImportError as e:
 
 # ── Collect YAML files ────────────────────────────────────────────────────────
 yaml_files = sorted(
-    glob.glob(os.path.join(YAML_DIR, "**", "*.yaml"), recursive=True) +
-    glob.glob(os.path.join(YAML_DIR, "**", "*.yml"),  recursive=True)
+    glob.glob(os.path.join(YAML_DIR, "**", "*.yaml"), recursive=True)
+    + glob.glob(os.path.join(YAML_DIR, "**", "*.yml"), recursive=True)
 )
 log.info("Found %d YAML file(s) in %s", len(yaml_files), YAML_DIR)
 
@@ -72,7 +74,9 @@ full_rebuild = args.full or (no_manifest and os.path.exists(DB_PATH))
 
 if full_rebuild:
     reason = "--full flag" if args.full else "no manifest (first incremental run)"
-    log.info("Full rebuild (%s) — building into temp DB to avoid disrupting live app", reason)
+    log.info(
+        "Full rebuild (%s) — building into temp DB to avoid disrupting live app", reason
+    )
 
     # Clean up any leftover temp files from a previously interrupted run
     if os.path.exists(DB_NEW_PATH):
@@ -82,7 +86,9 @@ if full_rebuild:
     os.makedirs(STORE_NEW_PATH, exist_ok=True)
 
     # Build a fresh KG into the temp paths
-    kg = KnowledgeGraph(store="SQLAlchemy", store_file=DB_NEW_PATH, structure_store=STORE_NEW_PATH)
+    kg = KnowledgeGraph(
+        store="SQLAlchemy", store_file=DB_NEW_PATH, structure_store=STORE_NEW_PATH
+    )
     wp = WorkflowParser(kg=kg)
     errors = []
     manifest: dict = {}
@@ -128,8 +134,11 @@ try:
 except Exception:
     manifest = {}
 
-to_parse = [(yf, os.path.getmtime(yf)) for yf in yaml_files
-            if manifest.get(yf) != os.path.getmtime(yf)]
+to_parse = [
+    (yf, os.path.getmtime(yf))
+    for yf in yaml_files
+    if manifest.get(yf) != os.path.getmtime(yf)
+]
 
 if not to_parse:
     log.info("All files already up-to-date — nothing to do.")
@@ -196,17 +205,19 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 parser_args = argparse.ArgumentParser()
-parser_args.add_argument("--full", action="store_true", help="Wipe and rebuild from scratch")
+parser_args.add_argument(
+    "--full", action="store_true", help="Wipe and rebuild from scratch"
+)
 args = parser_args.parse_args()
 
 # ── Paths ────────────────────────────────────────────────────────────────────
-DATA_DIR      = os.environ.get("DATA_DIR",  "/data")
-DB_PATH       = os.path.join(DATA_DIR, "graph.db")
-STORE_PATH    = os.path.join(DATA_DIR, "structure_store")
+DATA_DIR = os.environ.get("DATA_DIR", "/data")
+DB_PATH = os.path.join(DATA_DIR, "graph.db")
+STORE_PATH = os.path.join(DATA_DIR, "structure_store")
 MANIFEST_PATH = os.path.join(DATA_DIR, "parsed_manifest.json")
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-YAML_DIR   = os.environ.get("YAML_DIR", os.path.join(SCRIPT_DIR, "data"))
+YAML_DIR = os.environ.get("YAML_DIR", os.path.join(SCRIPT_DIR, "data"))
 
 # ── Imports ──────────────────────────────────────────────────────────────────
 try:
@@ -218,8 +229,8 @@ except ImportError as e:
 
 # ── Collect YAML files ────────────────────────────────────────────────────────
 yaml_files = sorted(
-    glob.glob(os.path.join(YAML_DIR, "**", "*.yaml"), recursive=True) +
-    glob.glob(os.path.join(YAML_DIR, "**", "*.yml"),  recursive=True)
+    glob.glob(os.path.join(YAML_DIR, "**", "*.yaml"), recursive=True)
+    + glob.glob(os.path.join(YAML_DIR, "**", "*.yml"), recursive=True)
 )
 log.info("Found %d YAML file(s) in %s", len(yaml_files), YAML_DIR)
 
@@ -281,7 +292,7 @@ for yf, mtime in to_parse:
         result = wp.parse(yf)
         n_samples = len(result.get("sample_map", {}))
         log.info("  → %d sample(s) added/deduplicated", n_samples)
-        manifest[yf] = mtime          # mark as successfully parsed
+        manifest[yf] = mtime  # mark as successfully parsed
     except Exception as exc:
         log.error("  ✗ Failed to parse %s: %s", yf, exc)
         errors.append((yf, str(exc)))

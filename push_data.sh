@@ -1,64 +1,78 @@
 #!/usr/bin/env bash
 # push_data.sh
-# Build the KG locally from YAML files in ./data/, then deploy the DB to the VM.
-# Usage: ./push_data.sh [--full]
-#   --full  Force a full wipe + rebuild (default on first run; auto-detected otherwise)
+# Deploy a pre-built Oxigraph KG (combined_KG/) to the VM.
+# The KG must already be built locally via atomRDF_usecases/build_combined_kg.py.
+#
+# Usage: ./push_data.sh [--kg-dir /path/to/combined_KG]
+#   --kg-dir  Override the path to the pre-built KG directory
+#             (default: ../atomRDF_usecases/combined_KG)
 set -e
 
 VM="atomrdf@34.77.151.119"
 SSH_KEY="$HOME/.ssh/atomrdf_gcp"
 RELOAD_TOKEN="bae2bf985952a281bb28eea7ec6e78e2914ce103f41016ed99c0b0e43572b6d5"
 
-BUILD_DIR="$(cd "$(dirname "$0")" && pwd)/build"
-FULL_FLAG=""
-[[ "$1" == "--full" ]] && FULL_FLAG="--full"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-# ── 1. Build KG locally ──────────────────────────────────────────────────────
-echo "==> Building KG locally (output: $BUILD_DIR)..."
-mkdir -p "$BUILD_DIR"
-DATA_DIR="$BUILD_DIR" python "$(dirname "$0")/rebuild_graph.py" $FULL_FLAG
+# ── Resolve KG directory ─────────────────────────────────────────────────────
+KG_DIR=""
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --kg-dir) KG_DIR="$2"; shift 2 ;;
+    *) echo "Unknown argument: $1"; exit 1 ;;
+  esac
+done
+[[ -z "$KG_DIR" ]] && KG_DIR="$SCRIPT_DIR/../atomRDF_usecases/combined_KG"
+KG_DIR="$(cd "$KG_DIR" && pwd)"
 
-# ── 2. Generate cache (samples, workflows, properties JSON) ──────────────────
+LOCAL_DB="$KG_DIR/oxigraph.db"
+LOCAL_STORE="$KG_DIR/rdf_structure_store"
+
+if [[ ! -d "$LOCAL_DB" ]]; then
+  echo "ERROR: Oxigraph store not found at $LOCAL_DB"
+  echo "  Run: python atomRDF_usecases/build_combined_kg.py"
+  exit 1
+fi
+
+# ── 1. Generate cache (samples, workflows, properties JSON) ──────────────────
 echo "==> Generating JSON cache files..."
-DATA_DIR="$BUILD_DIR" python "$(dirname "$0")/generate_cache.py"
+mkdir -p "$KG_DIR/cache"
+DATA_DIR="$KG_DIR" DB_PATH="$LOCAL_DB" python "$SCRIPT_DIR/generate_cache.py"
 
-# ── 3. Close the live app's DB connection ────────────────────────────────────
+# ── 2. Close the live app's DB connection ────────────────────────────────────
 echo "==> Closing app DB connection on VM..."
 ssh -i "$SSH_KEY" "$VM" \
-  "curl -sf -X POST -H 'X-Reload-Token: $RELOAD_TOKEN' http://localhost:8000/api/admin/close && echo '  closed'"
+  "curl -sf -X POST -H 'X-Reload-Token: $RELOAD_TOKEN' http://localhost:8000/api/admin/close && echo '  closed'" || true
 
-# ── 4. Resolve DB / store / manifest filenames (full rebuild uses _new suffix) ─
-if [[ -f "$BUILD_DIR/graph_new.db" ]]; then
-  LOCAL_DB="$BUILD_DIR/graph_new.db"
-  LOCAL_STORE="$BUILD_DIR/structure_store_new"
-  LOCAL_MANIFEST="$BUILD_DIR/parsed_manifest_new.json"
-else
-  LOCAL_DB="$BUILD_DIR/graph.db"
-  LOCAL_STORE="$BUILD_DIR/structure_store"
-  LOCAL_MANIFEST="$BUILD_DIR/parsed_manifest.json"
-fi
+# ── 3. Upload Oxigraph store (directory) to VM ───────────────────────────────
+echo "==> Uploading oxigraph.db/ to VM..."
+ssh -i "$SSH_KEY" "$VM" "mkdir -p /data/oxigraph.db_new"
+rsync -az --delete -e "ssh -i $SSH_KEY" \
+  "$LOCAL_DB/" "$VM:/data/oxigraph.db_new/"
 
-echo "==> Uploading $LOCAL_DB to VM..."
-scp -i "$SSH_KEY" "$LOCAL_DB" "$VM:/data/graph_new.db"
-
+# ── 4. Upload rdf_structure_store to VM ──────────────────────────────────────
 if [[ -d "$LOCAL_STORE" ]]; then
-  echo "==> Uploading structure_store to VM..."
-  scp -i "$SSH_KEY" -qr "$LOCAL_STORE" "$VM:/data/structure_store_new"
+  echo "==> Uploading rdf_structure_store/ to VM..."
+  ssh -i "$SSH_KEY" "$VM" "mkdir -p /data/rdf_structure_store_new"
+  rsync -az --delete -e "ssh -i $SSH_KEY" \
+    "$LOCAL_STORE/" "$VM:/data/rdf_structure_store_new/"
 fi
 
-if [[ -d "$BUILD_DIR/cache" ]]; then
+# ── 5. Upload cache dir ───────────────────────────────────────────────────────
+if [[ -d "$KG_DIR/cache" ]]; then
   echo "==> Uploading cache dir to VM..."
-  scp -i "$SSH_KEY" -qr "$BUILD_DIR/cache" "$VM:/data/cache_new"
+  rsync -az --delete -e "ssh -i $SSH_KEY" \
+    "$KG_DIR/cache/" "$VM:/data/cache_new/"
 fi
 
-# ── 5. Atomic swap on VM ─────────────────────────────────────────────────────
-echo "==> Swapping DB on VM..."
+# ── 6. Atomic swap on VM ─────────────────────────────────────────────────────
+echo "==> Swapping data on VM..."
 ssh -i "$SSH_KEY" "$VM" "
-  rm -f /data/graph.db
-  mv /data/graph_new.db /data/graph.db
-  if [ -d /data/structure_store_new ]; then
-    rm -rf /data/structure_store
-    mv /data/structure_store_new /data/structure_store
+  rm -rf /data/oxigraph.db
+  mv /data/oxigraph.db_new /data/oxigraph.db
+  if [ -d /data/rdf_structure_store_new ]; then
+    rm -rf /data/rdf_structure_store
+    mv /data/rdf_structure_store_new /data/rdf_structure_store
   fi
   if [ -d /data/cache_new ]; then
     rm -rf /data/cache
@@ -66,22 +80,6 @@ ssh -i "$SSH_KEY" "$VM" "
   fi
   echo '  swapped'
 "
-
-# ── 6. Upload manifest ───────────────────────────────────────────────────────
-if [[ -f "$LOCAL_MANIFEST" ]]; then
-  scp -i "$SSH_KEY" "$LOCAL_MANIFEST" "$VM:/data/parsed_manifest.json"
-fi
-
-# ── 7. Patch structure-store paths in the DB ────────────────────────────────
-# The locally-built DB contains Mac absolute paths pointing to $BUILD_DIR.
-# patch_paths.py rewrites all CMSO.hasPath triples to /data/structure_store/.
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-echo "==> Patching structure-store paths in DB on VM..."
-scp -i "$SSH_KEY" "$SCRIPT_DIR/patch_paths.py" "$VM:/tmp/patch_paths.py"
-ssh -i "$SSH_KEY" "$VM" \
-  "docker cp /tmp/patch_paths.py kg_frontend_app:/tmp/patch_paths.py && \
-   docker exec kg_frontend_app /opt/conda/bin/python /tmp/patch_paths.py && \
-   echo '  paths patched'"
 
 # ── 7. Signal app to reload ──────────────────────────────────────────────────
 echo "==> Reloading KG in app..."

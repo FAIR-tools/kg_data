@@ -27,10 +27,10 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-DATA_DIR   = os.environ.get("DATA_DIR", "/data")
-DB_PATH    = os.path.join(DATA_DIR, "graph.db")
+DATA_DIR = os.environ.get("DATA_DIR", "/data")
+DB_PATH = os.path.join(DATA_DIR, "graph.db")
 NEW_PREFIX = os.environ.get("NEW_PREFIX", os.path.join(DATA_DIR, "structure_store"))
-OLD_PREFIX = os.environ.get("OLD_PREFIX", None)   # auto-detect if not set
+OLD_PREFIX = os.environ.get("OLD_PREFIX", None)  # auto-detect if not set
 
 try:
     from atomrdf import KnowledgeGraph
@@ -62,7 +62,9 @@ if OLD_PREFIX is None:
             break
 
 if OLD_PREFIX is None:
-    log.warning("All paths already start with /data (or no path triples found). Nothing to patch.")
+    log.warning(
+        "All paths already start with /data (or no path triples found). Nothing to patch."
+    )
     kg.close()
     sys.exit(0)
 
@@ -74,14 +76,18 @@ for subj, pred, obj in all_path_triples:
     val = str(obj)
     if val.startswith(OLD_PREFIX):
         basename = os.path.basename(val)
-        new_val  = os.path.join(NEW_PREFIX, basename)
+        new_val = os.path.join(NEW_PREFIX, basename)
         kg.remove((subj, pred, obj))
         kg.add((subj, pred, Literal(new_val, datatype=XSD.string)))
         patched += 1
     else:
         skipped += 1
 
-log.info("Patched %d path(s), skipped %d (already correct or different prefix)", patched, skipped)
+log.info(
+    "Patched %d path(s), skipped %d (already correct or different prefix)",
+    patched,
+    skipped,
+)
 
 # ── Verify a few ─────────────────────────────────────────────────────────────
 log.info("Sample paths after patching:")
