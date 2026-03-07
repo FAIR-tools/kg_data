@@ -304,7 +304,9 @@ def build_properties():
 
         if value_lit is not None:
             try:
-                value = float(value_lit.toPython())
+                import math
+                v = float(value_lit.toPython())
+                value = None if (math.isnan(v) or math.isinf(v)) else v
             except Exception:
                 value = str(value_lit)
             value_is_array = False
